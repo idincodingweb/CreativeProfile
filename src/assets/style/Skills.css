@@ -1,0 +1,147 @@
+/* Styling for Skills component */
+.skills-container {
+    padding: 20px;
+    background: linear-gradient(to right, #0a192f, #112240);
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: rgba(0,0,0,0.1); /* Dark Gray */
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 350px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-icon {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: #ff6500; /* Orange */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    color: #FFFFFF; /* White */
+    font-size: 1em;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.card-readmore {
+    color: #ff6500; /* Orange */
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-readmore .arrow {
+    margin-left: 5px;
+}
+
+/* Styling for Experience Section */
+.experience-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.experience-number {
+    text-align: center;
+    margin-right: 40px; /* Add some space between number and cards */
+}
+
+.big-number {
+    font-size: 5em;
+    color: #ff6500; /* Orange */
+}
+
+.years-text {
+    font-size: 1.5em;
+    color: #FFFFFF; /* White */
+}
+
+.landscape-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 640px; /* Set a max width to keep cards in two rows */
+}
+
+.landscape-card {
+    background-color: #2522221e; /* Dark Gray */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landscape-number {
+    font-size: 2.5em;
+    color: #ff6500; /* Orange */
+    font-weight: bold;
+}
+
+.landscape-text {
+    font-size: 1.2em;
+    color: #FFFFFF; /* White */
+    margin-top: 5px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%; /* Full width */
+        margin: 10px 0; /* Reduce margin for mobile */
+    }
+
+    .experience-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-number {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin */
+    }
+
+    .landscape-cards {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%; /* Full width */
+    }
+
+    .landscape-card {
+        width: 100%; /* Full width */
+        margin: 10px 0; /* Reduce margin for mobile */
+    }
+}

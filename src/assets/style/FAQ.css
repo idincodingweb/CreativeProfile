@@ -1,0 +1,89 @@
+/* FAQ.css */
+.faq-container {
+  background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
+  padding: 2rem 0;
+  color: white;
+}
+
+.custom-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  border-radius: 30px;
+  margin: 0 auto;
+  max-width: fit-content;
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  background: #ff6500; /* Orange */
+}
+
+.tab-button:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.expand-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.expand-icon.expanded {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .custom-tabs {
+    flex-wrap: wrap;
+  }
+  
+  .tab-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-tabs {
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  .tab-button {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

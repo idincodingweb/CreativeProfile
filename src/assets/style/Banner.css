@@ -1,0 +1,79 @@
+/* Styling for Banner component */
+.banner {
+    position: relative;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: #0b0c104b; /* Rich Black */
+}
+
+.banner-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-right {
+    text-align: left;
+}
+
+.profile-img {
+    width: 300px; /* Default size for profile image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+.intro-text {
+    color: #ff6500; /* Orange */
+    font-size: 1em;
+}
+
+.title-text {
+    color: White; /* White */
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.description-text {
+    color: #D3D3D3; /* Light Gray */
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.readmore-button {
+    background-color: #ff6500; /* Orange */
+    color: #FFFFFF; /* White */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.readmore-button:hover {
+    background-color: #ff6500; /* Darker Orange */
+}
+
+.banner-line {
+    width: 50px; /* Width of the line */
+    height: 4px; /* Height of the line */
+    background-color: #ff6500; /* Orange */
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 25px); /* Center the line horizontally */
+}
+
+/* Responsive styling */
+@media (min-width: 600px) {
+    .profile-img {
+        width: 700px; /* Larger size for tablets and small desktops */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-img {
+        width: 500px; /* Larger size for desktops */
+        height: auto; /* Maintain aspect ratio */
+    }
+}

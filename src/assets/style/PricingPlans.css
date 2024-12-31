@@ -1,0 +1,59 @@
+.pricing-plans-container {
+  padding: 50px 0;
+  color: white;
+}
+
+.plan-card {
+  background-color: #33333318; /* Dark background */
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.plan-card h2 {
+  color: #ff6500; /* Orange color */
+  font-size: 2.5rem;
+  margin: 15px 0;
+}
+
+.plan-card ul li {
+  margin: 10px 0;
+}
+
+.plan-card .btn {
+  background-color: #ff6500; /* Orange background */
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.plan-card .btn:hover {
+  background-color: #e55c00; /* Darker orange on hover */
+}
+
+.most-popular {
+  position: relative;
+  border: 2px solid #ff6500; /* Orange border */
+}
+
+.most-popular-tag {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff6500; /* Orange background */
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+}

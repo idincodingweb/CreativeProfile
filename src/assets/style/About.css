@@ -1,0 +1,213 @@
+/* AboutUs.css */
+.about-us {
+    overflow-x: hidden;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s ease-out forwards;
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideIn 1s ease-out forwards;
+}
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: zoomIn 1s ease-out forwards;
+}
+
+/* Progress Bar Animation */
+.progress-bar {
+    width: 0 !important;
+    animation: progressBar 1.5s ease-out forwards;
+}
+
+/* Specific Progress Bar Colors */
+.progress-bar.frontend {
+    background-color: #ff6500; /* Orange */
+}
+
+.progress-bar.backend {
+    background-color: #28a745; /* Green */
+}
+
+.progress-bar.uiux {
+    background-color: #17a2b8; /* Blue */
+}
+
+/* Counter Animation */
+.counter {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: counterUp 0.8s ease-out forwards;
+}
+
+/* Button Hover Effect */
+.hover-effect {
+    transition: all 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Skill Items */
+.skill-item {
+    margin-bottom: 2rem;
+}
+
+.progress1 {
+    height: 8px;
+    background-color: #ff6500;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.progress2 {
+    height: 8px;
+    background-color: #28a745;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.progress3 {
+    height: 8px;
+    background-color: #17a2b8;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Stats Section */
+.stat-item {
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+/* Title Text Color */
+.display-4, h2 {
+    color: #ff6500; /* Orange */
+}
+
+.btn-color {
+  background-color: #000000a1 ;
+  color: white;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes progressBar {
+    from {
+        width: 0 !important;
+    }
+    to {
+        width: var(--width) !important;
+    }
+}
+
+@keyframes counterUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .slide-in-left,
+    .slide-in-right {
+        transform: translateX(0);
+    }
+    
+    .stat-item {
+        padding: 1rem;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Intersection Observer untuk Trigger Animasi */
+.reveal {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

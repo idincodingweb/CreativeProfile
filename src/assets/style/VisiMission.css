@@ -1,0 +1,123 @@
+/* VisionMission.css */
+.vision-mission-container {
+  background: linear-gradient(to right, #0a192f, #112240);
+  color: white;
+  padding: 2rem 0;
+}
+
+.section-label {
+  color: #ff6500; /* Orange */
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.section-text {
+  color: #8892b0;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.image-grid {
+  position: relative;
+  height: 600px;
+}
+
+.floating-image {
+  position: absolute;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.image-1 {
+  width: 250px;
+  height: 350px;
+  top: 0;
+  right: 0;
+  background-image: url('https://images.pexels.com/photos/3913025/pexels-photo-3913025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Placeholder image */
+  animation: float 6s ease-in-out infinite;
+}
+
+.image-2 {
+  width: 200px;
+  height: 200px;
+  top: 50px;
+  left: 50px;
+  background-image: url('https://images.pexels.com/photos/8294666/pexels-photo-8294666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Placeholder image */
+  animation: float 8s ease-in-out infinite;
+}
+
+.image-3 {
+  width: 150px;
+  height: 150px;
+  bottom: 100px;
+  right: 100px;
+  background-image: url('https://images.pexels.com/photos/8294618/pexels-photo-8294618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Placeholder image */
+  animation: float 7s ease-in-out infinite;
+}
+
+.image-4 {
+  width: 180px;
+  height: 180px;
+  bottom: 50px;
+  left: 0;
+  background-image: url('https://images.pexels.com/photos/8294655/pexels-photo-8294655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Placeholder image */
+  animation: float 9s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Media Query for tablets */
+@media (max-width: 991px) {
+  .image-grid {
+    height: 400px;
+    margin-top: 2rem;
+  }
+  
+  .floating-image {
+    transform: scale(0.8);
+  }
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .image-grid {
+    height: 300px;
+    margin-top: 1rem;
+  }
+  
+  .floating-image {
+    transform: scale(0.6);
+  }
+
+  .content-section {
+    margin-bottom: 3rem;
+  }
+}

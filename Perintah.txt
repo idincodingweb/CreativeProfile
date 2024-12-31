@@ -1,0 +1,19 @@
+1. sekarang buatkan Navbar.jsx .
+Desain Navbar : sebelah kiri tampilkan image logo dan disebelah ujung kanan menampilkan daftar menu [Home, Projets, About, Contact] di setiap List menu nya tambahkan garis Line warna oranye agar terkesan keren berwarna.
+Fitur : Responsif saat berada dalam tampilan mobile maka menu nya hilang dan akan muncul ketika tombol menu di klik, untuk layar dekstop biarkan saja langsung muncul menu nya.
+
+2.saya sedang membangun web portfolioBuatkan saya banner.jsx .
+desain dan fitur : kiri baner menampilkan gambar profil dan di sebelah kanan menampilkan Teks dan teks yang tampil seperti berikut teks pertama buat kecil aja biasa [Hallo Im Idin Code] lalu teks kedua posisi dibawah teks pertama dengan desain teks yang besar artinya teks title teks yang muncul di teks kedua ini [ Front End Coding ] lalu dibawahnya menampilkan teks lagi teks ke tiga berisi deskripsi web portfolio ini [isi deskripsi disini bebas silahkan kamu buatkan] dan terakhir dibawah teks ketiga menampilkan Button menu [Readmore] . kasih warna Oranye untuk teks pertama, lalu warna putih untuk teks kedua atau teks title, dan untuk teks ketiga warna putih juga tapi putih yang terlihat sedikit abu-abu, dan untuk background tombol button warna oranye .
+styling : buatkan css yang responsif layar mobile dan dekstop, background banner ini warna Rich Black.
+
+3. sekarang buatkan skills.jsx .
+desain dan fitur : card buat tidak terlalu lebar tetapi untuk height buat sedikut tinggi, buat 3 card. dalam kotak card menampilkan icon dan dibawah icon itu title skills lalu dibawah title skills itu deskripsi skills. lalu dibawah deskripsi tambahkan arahan dengan menampilkan teks Read More dengan menampilkan tanda panah atau arrow di sebelahnya. untuk icon bebas kamu bisa gunakan react-icons atau font awesome. pewarnaan [Title warna oranye, deskripsi warna putih]
+
+masih di skills.jsx . sekarang saya ingin menambahkan dibagian bawah card tadi dengan membuat item komponen yang baru berikut detail desain dan apa saja yang ingin ditambahkan : tambahkan item angka 12 angka bentuknya besar dibawah angka ada teks [YEARS] lalu di sebelahnya menampilkan 4card dengan desain card lanscape masing masing 2card lanscape selanjutnya sisa 2card lagi diawahnya dan jadilah 4card. tinggi komponen anka 12 meliputi tinggi ke empat card di sampingnya.
+
+dalam card lanskape isi seperti berikut. isi card 1 [ 60+ Clients] isi card 2 [ 08 Years Experience ] isi card 3 [ 122+ Complete projects ] isi card 4 [ 10 Archievements ] .
+Desain isi dalam cardnya seperti berikut : buat angka nya memiliki ukuran besar dan tebal lalu untuk teks nya buat dibawah angka saja misalnya [ 60+ lalu dibawahnya Clients ] begitu seterusnya lakukan ke yang lain yang ada di card lanscape . warna angka nya oranye selain itu warna biasa putih
+
+4. sekarang buat About.jsx posisi About.jsx ini berada dibawah banner .
+Desain About : Tampilkan Gambar sebelah kanan dan sebelah kiri teks title dan deskripsi about [tulis deskripsi about bebas terserahk kamu tapi tambahkan nama Idin Code di about] title About warna oranye dan deskripsi biarkan warna putih. saya ingin About ini berbentuk Card dengan background glorism transparent glass. lalu dibawah teks title dan deskripsi about tambahkan 4 icon social media seperti [facebook, instagram, whatsapp, Pinterst] untuk icon bebas kamu bisa gunakan react-icons atau font awesome .
+

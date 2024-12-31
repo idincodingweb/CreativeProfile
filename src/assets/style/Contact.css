@@ -1,0 +1,68 @@
+.contact-page {
+  color: white;
+}
+
+h4 {
+  color: #ff6500;
+}
+
+.form-control {
+  border: 1.5px solid #a75f284f;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.form-control:focus {
+  border-color: #fff;
+  box-shadow: none;
+}
+
+.contact-item {
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate__animated {
+  opacity: 1;
+}
+
+/* Custom animation durations */
+.animate__fadeIn {
+  animation-duration: 1s;
+}
+
+.bg-coeg {
+  background: #0000001e;
+}
+
+.cta-section {
+    z-index: 100;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-info {
+    margin-top: 2rem;
+  }
+}
+
